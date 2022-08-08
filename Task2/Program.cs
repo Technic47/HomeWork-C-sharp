@@ -4,9 +4,9 @@ int number2 = 0;
 int max = 0;
 
 Console.WriteLine("Enter number1: ");
-string userenter1 = Console.ReadLine();
+string userenter1 = Console.ReadLine()!;
 Console.WriteLine("Enter number2: ");
-string userenter2 = Console.ReadLine();
+string userenter2 = Console.ReadLine()!;
 
 bool enter1 = int.TryParse(userenter1, out number1);
 if (enter1)

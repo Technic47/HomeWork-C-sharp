@@ -4,21 +4,19 @@ double dev = 0;
 double index = 0;
 
 Console.WriteLine("Enter number: ");
-string userenter1 = Console.ReadLine();
+string userenter1 = Console.ReadLine()!;
 
 
 bool enter1 = double.TryParse(userenter1, out number1);
 if (enter1)
 {
-    while (index < number1)
+    while (index <= number1)
     {
         if (enter1)
         {
             dev = index% 2;
-            if (dev == 0)
-            {
-                Console.Write($"{index},  ");
-            }
+            if (dev == 0) Console.Write($"{index}  ");          
+                 
         index++;
         }
         
